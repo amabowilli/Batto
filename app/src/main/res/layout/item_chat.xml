@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:id="@+id/receiver_chat_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/receiver_profile_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/chat_bubble_sender"
+            android:orientation="vertical">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/receiver_img_chat"
+                android:layout_width="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="200dp"
+                android:src="@drawable/location_chat"/>
+
+            <TextView
+                android:id="@+id/receiver_chat_message"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="30dp"
+                android:padding="5dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/receive_time"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sender_chat_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/chat_bubble"
+            android:orientation="vertical">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/sender_img_chat"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/location_chat"/>
+
+            <TextView
+                android:id="@+id/sender_chat_message"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="300dp"
+                android:minWidth="30dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/send_time"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sender_profile_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user" />
+    </LinearLayout>
+</RelativeLayout>

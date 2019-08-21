@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Batto</string>
+    <string name="snapposttext">Snap &amp; Post in 30 Seconds</string>
+    <string name="buysellnear">Buy &amp; Sell, near you</string>
+    <string name="to_start_buying_selling"><![CDATA[To start buying & selling]]></string>
+    <string name="by_continuing_you_agree_our_terms_conditinos"><![CDATA[By continuing, you agree our Terms & Conditinos]]></string>
+    <string name="ads_you_love_mark_as_favourite_will_appear_here"><![CDATA[Ads you love & mark as favourite will appear here]]></string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="facebook_app_id">647915142273332</string>
+    <string name="fb_login_protocol_scheme">fb647915142273332</string>
+    <string name="admob_app_id">ca-app-pub-9304311353435424/9508108915</string>
+    <string name="banner_home_footer">ca-app-pub-XXXXXXXX~XXXXXXXXXXX</string>
+    <string name="interstitial_full_screen">ca-app-pub-5900529430313043/5775717859</string>
+    <string name="rewarded_video">ca-app-pub-XXXXXXXX~XXXXXXXXXXX</string>
+    <string name="BANNER_TESTING">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

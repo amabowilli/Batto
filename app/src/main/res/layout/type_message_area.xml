@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:weightSum="1"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/send_chat_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight=".9"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:imeOptions="actionDone"
+
+        android:hint="Write a message"
+        android:textColor="#000"
+        android:background="@drawable/input"
+        android:textColorHint="#000" />
+
+    <ImageView
+        android:id="@+id/send_chat_image_view"
+        android:layout_weight=".1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/send" />
+</LinearLayout>

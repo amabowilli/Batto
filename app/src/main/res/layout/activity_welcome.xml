@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Welcome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/ci_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            app:ci_animator="@animator/indicator_animator"
+            app:ci_animator_reverse="@animator/indicator_animator_reverse"
+            app:ci_drawable="@drawable/circle_indicator"
+            app:ci_height="6dp"
+            app:ci_margin="6dp"
+            app:ci_width="6dp" />
+
+
+        <TextView
+            android:id="@+id/welcome_next_text"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:text="NEXT" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

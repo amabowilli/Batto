@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.techno.batto.Activity.IntrestedUserListActivity">
+
+    <RelativeLayout
+        android:id="@+id/lay_head"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pdlg_space_1.0x"
+            android:src="@drawable/back2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFF"
+            android:text="Interested Users"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Rvainuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_sale"
+        android:layout_below="@+id/lay_head"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_sale"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:text="Sold the item on another site"
+        android:layout_marginBottom="@dimen/h5"
+        android:background="@drawable/button"
+        />
+
+</RelativeLayout>

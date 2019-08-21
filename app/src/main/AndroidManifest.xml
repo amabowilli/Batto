@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.techno.batto">
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.myapp.mobile.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".Bean.App"
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:icon="@drawable/luncher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/luncher"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name=".Activity.WebViewActivity"></activity>
+        <activity android:name=".Activity.EditProductDetailsActivity" />
+        <activity android:name=".Activity.GetLocationForChat" />
+        <activity android:name=".Activity.CountryListActivity" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBBdOdMUYJziMgySF7e5mmDfKsq6odg1U8" />
+
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- ./Firebase Notifications -->
+        <service android:name=".service.GetChatService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".Activity.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Welcome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LoginBYEmail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OTPVerify"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Notification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Filter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ChangeLocation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Setting"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.CameraViewActivity" />
+        <activity android:name=".Activity.AddProductActivity" />
+        <activity android:name=".Activity.ProductDetailsActivity" />
+        <activity android:name=".Activity.ChatActivity" />
+        <activity android:name=".Activity.IntrestedUserListActivity" />
+        <activity android:name=".Activity.FilteredProductListActivity" />
+        <activity android:name=".Activity.AddPostActivity" />
+        <activity android:name=".Activity.ViewUserProfileActivity" />
+        <activity android:name=".Activity.AddReviewActivity" />
+        <activity android:name=".Activity.ReportActivity" />
+        <activity android:name=".Activity.ConditionActivity" />
+        <activity android:name=".Activity.CategoryListActivity" />
+        <activity android:name=".Activity.SubCategortActivity" />
+        <activity android:name=".Activity.SecondSubCategoryListActivity" />
+        <activity android:name=".Activity.GetCatTextActivity" />
+        <activity android:name=".Activity.FollowerFollowingActivity" />
+        <activity android:name=".Activity.MyPostListActivity" />
+    </application>
+
+</manifest>

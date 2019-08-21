@@ -1,0 +1,137 @@
+{
+  "project_info": {
+    "project_number": "564599267668",
+    "firebase_url": "https://classified-bdf2e.firebaseio.com",
+    "project_id": "classified",
+    "storage_bucket": "classified.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564599267668:android:019c8673e2ff2178",
+        "android_client_info": {
+          "package_name": "com.t.classified"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564599267668-poi29tbab351a2fla13fsbchlqfcc3nj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.t.classified",
+            "certificate_hash": "621fdd025f3ebb83869a22484409d033c8b10409"
+          }
+        },
+        {
+          "client_id": "564599267668-dihssrgun6u8kqorcjc5kg42lqpc3er8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.t.classified",
+            "certificate_hash": "12325694153d21369ddee237ae9d7ad695405f8b"
+          }
+        },
+        {
+          "client_id": "564599267668-l9v84vhg5lm6o601drsh6q575c6pcaru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.t.classified",
+            "certificate_hash": "56049c18a55d07313337fb2cc81ae511e72cfffb"
+          }
+        },
+        {
+          "client_id": "564599267668-1ggotnbqknv49eorgulcbsqtctt2pu5c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.t.classified",
+            "certificate_hash": "8bc0be3bcc3e671e098e4f9fc51b7de5999e5c7f"
+          }
+        },
+        {
+          "client_id": "564599267668-pj79s6nhkceiep8bl7ba0e6kujt6va42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgMqfz1Sor_2Za197zrw6207MPlewcBr8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564599267668-95ik98o3iq2s8d6r0ia01srb8po743nb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "564599267668-g3gic9v7sqk95lgn03d5tdo69guvkslo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ios.Batto"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564599267668:android:b6c22175c3665ef2",
+        "android_client_info": {
+          "package_name": "com.techno.batto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564599267668-barf5qh7fc0v9b8d45f7rin8m79161um.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techno.batto",
+            "certificate_hash": "8bc0be3bcc3e671e098e4f9fc51b7de5999e5c7f"
+          }
+        },
+        {
+          "client_id": "564599267668-pj79s6nhkceiep8bl7ba0e6kujt6va42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgMqfz1Sor_2Za197zrw6207MPlewcBr8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564599267668-95ik98o3iq2s8d6r0ia01srb8po743nb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "564599267668-g3gic9v7sqk95lgn03d5tdo69guvkslo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ios.Batto"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
